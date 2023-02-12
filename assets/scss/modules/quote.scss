@@ -1,0 +1,68 @@
+.quote {
+    padding: 50px 0;
+    background-color: $color-black;
+
+    .quote__content {
+        color: $color-white;
+        text-align: center;
+        font-size: rem(19px);
+        line-height: rem(25px);
+        letter-spacing: rem(2px);
+
+        &::before {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 0.5px;
+            background-color: $color-white;
+            content: "";
+        }
+
+        &::after {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 0.5px;
+            background-color: $color-white;
+            content: "";
+        }
+    }
+}
+
+@include viewport(mw){
+    .quote {
+    
+        .quote__content {
+            font-size: rem(26px);
+            line-height: rem(35px);
+            letter-spacing: rem(6px);
+    
+            &::before {
+                margin-bottom: 10px;
+            }
+    
+            &::after {
+                margin-top: 10px;
+            }
+        }
+    }    
+}
+
+@include viewport(lw){
+    .quote {
+    
+        .quote__content {
+            font-size: rem(30px);
+            line-height: rem(37px);
+            letter-spacing: rem(9px);
+    
+            &::before {
+                margin-bottom: 15px;
+            }
+    
+            &::after {
+                margin-top: 15px;
+            }
+        }
+    }    
+}
