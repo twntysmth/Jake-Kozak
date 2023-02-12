@@ -2,6 +2,16 @@
 /*                PLUG AND PLAY STYLE MIXINS                */
 /* -------------------------------------------------------- */
 
+// TRANSLATE ELEMENT
+@mixin transform-translate($horizontal,$vertical) {
+
+  -webkit-transform: translate($horizontal, $vertical);
+  -o-transform: translate($horizontal, $vertical);
+  -moz-transform: translate($horizontal, $vertical);
+  -ms-transform: translate($horizontal, $vertical);
+  transform: translate($horizontal, $vertical);
+}
+
 // DEFINING THE MEDIA VIEWPORT
 @mixin viewport($viewportName) {
   @media screen and (min-width: map-get($viewports, $viewportName)) {
