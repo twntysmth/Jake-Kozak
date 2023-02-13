@@ -15,9 +15,7 @@
                 </figure>
             </div>
 
-            <h1 v-if="blok.headline" class="intro__headline w12 mw24">
-                {{ blok.headline }}
-            </h1>
+            <h1 v-if="blok.headline && blok.headline.length > 0" class="intro__headline w12 mw24"> {{ blok.headline }} </h1>
 
         </div>
     </div>

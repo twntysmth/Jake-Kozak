@@ -31,7 +31,7 @@
         color: $color-white;
         font-size: rem(25px);
         line-height: rem(32px);
-        letter-spacing: rem(3px);
+        letter-spacing: 2px;
     }
 }
 
@@ -41,7 +41,7 @@
             bottom: 35px;
             font-size: rem(30px);
             line-height: rem(38px);
-            letter-spacing: rem(5px);
+            letter-spacing: 6px;
         }
     }
 }
@@ -51,7 +51,7 @@
         .intro__headline {
             font-size: rem(37px);
             line-height: rem(45px);
-            letter-spacing: rem(8px);
+            letter-spacing: 9px;
         }
     }
 }

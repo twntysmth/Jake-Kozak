@@ -1,0 +1,158 @@
+.topic-slider {
+    padding: 40px 0;
+
+    .topic-slider__description {
+        margin-bottom: 25px;
+        text-align: center;
+
+        .topic-slider__description__headline {
+            letter-spacing: 1px;
+        }
+
+        .topic-slider__description__text {
+            margin-bottom: 15px;
+        }
+    }
+
+    .topic-slider__swiper {
+        padding-top: 50px;
+
+        .topic-slider__swiper__element {
+            figure {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 15px;
+                text-align: center;
+
+            }
+
+            a {
+                position: relative;
+                left: 50%;
+                @include transform-translate(-50%, 0);
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        top: 25px;
+        left: 35%;
+    }
+
+    .swiper-button-next {
+        top: 25px;
+        right: 35%;
+    }
+}
+
+@include viewport(mw){
+    .topic-slider {
+
+        .topic-slider__description {
+
+            .topic-slider__description__headline {
+                letter-spacing: 6px;
+            }
+
+            .topic-slider__description__text {
+
+            }
+        }
+
+        .topic-slider__swiper {
+
+            .topic-slider__swiper__element {
+
+                figure {
+                    picture {
+                        img {
+
+                        }
+                    }
+                }
+
+                h3 {
+
+                }
+
+                p {
+
+                }
+
+                a {
+                
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            left: 40%;
+        }
+    
+        .swiper-button-next {
+            right: 40%;
+        }
+    }
+}
+
+@include viewport(lw){
+    .topic-slider {
+        padding-bottom: 70px;
+
+        .topic-slider__description {
+            position: relative;
+            top: 50%;
+            @include transform-translate(0, -30%);
+
+            .topic-slider__description__headline {
+                letter-spacing: 9px
+            }
+
+            .topic-slider__description__text {
+
+            }
+        }
+
+        .topic-slider__swiper {
+
+            .topic-slider__swiper__element {
+
+                figure {
+                    picture {
+                        img {
+
+                        }
+                    }
+                }
+
+                h3 {
+                    
+                }
+
+                p {
+
+                }
+
+                a {
+                
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            top: 50%;
+            left: 5%;
+        }
+    
+        .swiper-button-next {
+            top: 50%;
+        }
+    }
+}

@@ -100,11 +100,10 @@ a, .link {
 
 button, input[type="button"], input[type="submit"], .button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 15px 25px;
   margin: 0;
-  background: $color-grey;
-  color: $color-white;
-  border: none;
+  color: $color-black;
+  border: 1px solid $color-black;
   cursor: pointer;
   text-decoration: none;
   transition: all $transitionTime ease;
@@ -115,7 +114,8 @@ button, input[type="button"], input[type="submit"], .button {
   }
   &:not([disabled]){
     &:hover, &:active {
-      background: lighten($color-grey,5%);
+      background: $color-black;
+      color: $color-white;
     }
   }
 }

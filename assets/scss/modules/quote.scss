@@ -7,7 +7,7 @@
         color: $color-white;
         font-size: rem(19px);
         line-height: rem(25px);
-        letter-spacing: rem(2px);
+        letter-spacing: 2px;
 
         &::before {
             display: block;
@@ -35,7 +35,7 @@
         .quote__content {
             font-size: rem(26px);
             line-height: rem(35px);
-            letter-spacing: rem(6px);
+            letter-spacing: 6px;
     
             &::before {
                 margin-bottom: 10px;
@@ -54,7 +54,7 @@
         .quote__content {
             font-size: rem(30px);
             line-height: rem(37px);
-            letter-spacing: rem(9px);
+            letter-spacing: 9px;
     
             &::before {
                 margin-bottom: 15px;
