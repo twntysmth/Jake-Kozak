@@ -1,0 +1,57 @@
+.intro {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    overflow: hidden;
+    @include transform-translate(-50%,0);
+
+    .grid-wrap {
+        padding: 0;
+    }
+
+    .intro__video {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+        video {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+    }
+
+    .intro__headline {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        @include transform-translate(-50%, 0);
+        text-align: center;
+        color: $color-white;
+        font-size: rem(25px);
+        line-height: rem(32px);
+        letter-spacing: 2px;
+    }
+}
+
+@include viewport(mw){
+    .intro {
+        .intro__headline {
+            bottom: 35px;
+            font-size: rem(30px);
+            line-height: rem(38px);
+            letter-spacing: 6px;
+        }
+    }
+}
+
+@include viewport(mw){
+    .intro {
+        .intro__headline {
+            font-size: rem(37px);
+            line-height: rem(45px);
+            letter-spacing: 9px;
+        }
+    }
+}

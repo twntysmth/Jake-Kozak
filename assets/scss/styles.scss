@@ -14,6 +14,8 @@
 /*                        BASIS                             */
 /* -------------------------------------------------------- */
 
+  @import "base/site-header";
+  @import "base/site-footer";
 
 /* -------------------------------------------------------- */
 /*                       PARTIALS                           */
@@ -31,6 +33,9 @@
 /*                     MODULES/SLICES                       */
 /* -------------------------------------------------------- */
 
+  @import "modules/intro";
+  @import "modules/topic-slider";
+  @import "modules/quote";
 
 /* -------------------------------------------------------- */
 /*                     SPECIAL MEDIA                        */
